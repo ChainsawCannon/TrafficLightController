@@ -340,10 +340,10 @@ void TrafficTask(void *argument){
 		UpdateSignal(YELLOW, RED);
 		osDelay(3000);
 
-		UpdateSignal(RED, RED);
-		osDelay(1000);
+
 
 		if(CrossReq == 1){
+			UpdateSignal(RED, RED);
 			osDelay(10000);
 			CrossReq = 0;
 		}
@@ -354,10 +354,10 @@ void TrafficTask(void *argument){
 		UpdateSignal(RED, YELLOW);
 		osDelay(3000);
 
-		UpdateSignal(RED, RED);
-		osDelay(1000);
+
 
 		if (CrossReq == 1){
+			UpdateSignal(RED, RED);
 			osDelay(10000);
 			CrossReq = 0;
 		}
